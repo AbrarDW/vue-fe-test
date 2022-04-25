@@ -1,14 +1,9 @@
-# vue-project
+# vue-fe-test
 
-This template should help get you started developing with Vue 3 in Vite.
+## Note
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Vue router is not used because there is only one page for test. If vue router is used, ```Layout.vue``` file should be created and 
+```<router-view></router-view>``` should be placed instead of ```<cards-page />```
 
 ## Project Setup
 
@@ -26,4 +21,21 @@ npm run dev
 
 ```sh
 npm run build
+```
+### Data file to mock api
+
+```sh
+public > data.json
+```
+
+### SCSS file
+
+```sh
+src > assets > custom.scss
+```
+
+### SVG files
+
+```sh
+src > assets > svg
 ```
