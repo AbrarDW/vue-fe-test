@@ -1,0 +1,276 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "./../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$primary: #01d167;
+$info: #23cefd;
+$secondary: #325baf;
+$font-size-base: 0.875rem;
+$dark: #0c365a;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "./../../node_modules/bootstrap/scss/variables";
+@import "./../../node_modules/bootstrap/scss/mixins";
+@import "./../../node_modules/bootstrap/scss/root";
+
+// 4. Include any optional Bootstrap CSS as needed
+@import "./../../node_modules/bootstrap/scss/utilities";
+@import "./../../node_modules/bootstrap/scss/reboot";
+@import "./../../node_modules/bootstrap/scss/type";
+@import "./../../node_modules/bootstrap/scss/images";
+@import "./../../node_modules/bootstrap/scss/containers";
+@import "./../../node_modules/bootstrap/scss/grid";
+@import "./../../node_modules/bootstrap/scss/tables";
+@import "./../../node_modules/bootstrap/scss/forms";
+@import "./../../node_modules/bootstrap/scss/buttons";
+@import "./../../node_modules/bootstrap/scss/transitions";
+@import "./../../node_modules/bootstrap/scss/dropdown";
+@import "./../../node_modules/bootstrap/scss/button-group";
+@import "./../../node_modules/bootstrap/scss/nav";
+@import "./../../node_modules/bootstrap/scss/navbar";
+@import "./../../node_modules/bootstrap/scss/card";
+@import "./../../node_modules/bootstrap/scss/accordion";
+@import "./../../node_modules/bootstrap/scss/breadcrumb";
+@import "./../../node_modules/bootstrap/scss/pagination";
+@import "./../../node_modules/bootstrap/scss/badge";
+@import "./../../node_modules/bootstrap/scss/alert";
+@import "./../../node_modules/bootstrap/scss/progress";
+@import "./../../node_modules/bootstrap/scss/list-group";
+@import "./../../node_modules/bootstrap/scss/close";
+@import "./../../node_modules/bootstrap/scss/toasts";
+@import "./../../node_modules/bootstrap/scss/modal";
+@import "./../../node_modules/bootstrap/scss/tooltip";
+@import "./../../node_modules/bootstrap/scss/popover";
+@import "./../../node_modules/bootstrap/scss/carousel";
+@import "./../../node_modules/bootstrap/scss/spinners";
+@import "./../../node_modules/bootstrap/scss/offcanvas";
+@import "./../../node_modules/bootstrap/scss/placeholders";
+@import "./../../node_modules/bootstrap/scss/helpers";
+
+// 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "./../../node_modules/bootstrap/scss/utilities/api";
+
+.sidebar {
+    .nav-link,
+    .nav-link:focus,
+    .nav-link:hover {
+        color: white;
+    }
+
+    .nav-link.active,
+    .show > .nav-link {
+        color: $primary;
+        background-color: transparent;
+    }
+}
+
+.no-padding-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-add-card,
+.btn-add-card:hover,
+.btn-add-card:focus {
+    color: $info;
+    text-decoration: none;
+    img {
+        vertical-align: text-bottom;
+    }
+}
+
+.btn-card-top,
+.btn-card-top:hover,
+.btn-card-top:focus {
+    color: $primary;
+    text-decoration: none;
+    background-color: white;
+    margin-bottom: -10px;
+    padding: 0.25rem 0.25rem 0.75rem 0.5rem;
+    border-radius: 10px 10px 0px 0px;
+    img {
+        vertical-align: text-bottom;
+    }
+}
+
+.card-nav {
+    border-bottom: 0;
+
+    .nav-item.show .nav-link,
+    .nav-link.active {
+        color: unset;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid $info;
+    }
+    .nav-item {
+        margin-right: 2rem;
+    }
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+
+.debit-card-outer {
+    text-align: left;
+
+    .btn-card-top-div {
+        padding-right: 0.6rem;
+    }
+}
+
+.debit-card {
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .card-number {
+        letter-spacing: 2px;
+
+        span {
+            margin-right: 0.5rem;
+        }
+        span:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .card-info {
+        letter-spacing: 1px;
+        font-size: $font-size-sm;
+    }
+}
+
+.card {
+    .card-header {
+        background-color: #f5f9ff;
+        * {
+            color: $dark;
+        }
+    }
+    .card-footer {
+        background-color: #ddffec;
+        color: $primary;
+    }
+}
+
+.actions-card {
+    background-color: #edf3ff;
+    color: $dark;
+}
+
+.font-primary {
+    color: $primary;
+}
+
+a.btn-trasanction {
+    color: $secondary;
+    font-size: $font-size-sm;
+}
+
+.text-muted {
+    opacity: 0.7;
+}
+
+.font-sm {
+    font-size: $font-size-sm;
+}
+
+.transaction-card {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+li:last-of-type .transaction-card {
+    border-bottom: 0;
+}
+
+.b-r-100 {
+    border-radius: 100%;
+}
+
+.price-display {
+    height: max-content;
+    img {
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+}
+
+.carousel__slide > .carousel__item {
+    transform: scale(0.9);
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.carousel__slide--visible > .carousel__item {
+    opacity: 1;
+    transform: rotateY(0);
+}
+.carousel__slide--next > .carousel__item {
+    transform: scale(0.9) translate(-10px);
+}
+.carousel__slide--prev > .carousel__item {
+    transform: scale(0.9) translate(10px);
+}
+.carousel__slide--active > .carousel__item {
+    transform: scale(1);
+}
+
+.carousel__pagination-button {
+    background-color: $secondary;
+}
+
+.carousel__pagination-button.carousel__pagination-button--active {
+    background-color: $primary;
+}
+
+.carousel__pagination-button:not(.carousel__pagination-button--active) {
+    width: 2px;
+    padding: 1px 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        .nav-link,
+        .nav-link:focus,
+        .nav-link:hover {
+            color: gray;
+        }
+
+        .nav-link.active,
+        .show > .nav-link {
+            color: green;
+            background-color: transparent;
+        }
+    }
+
+    .h-sm-100 {
+        padding-bottom: 3rem;
+    }
+
+    .actions-card {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .carousel__slide > .carousel__item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .h-sm-100 {
+        height: 100%;
+    }
+
+    .actions-card {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .carousel__slide > .carousel__item {
+        width: 95%;
+    }
+}

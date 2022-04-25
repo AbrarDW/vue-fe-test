@@ -1,0 +1,143 @@
+{
+    "account_balance": "3,000",
+    "cards": [
+        {
+            "id": 1,
+            "card_number": "1234 1234 1234 2020",
+            "card_cvv": "321",
+            "card_expiry": "10/22",
+            "card_name": "Mark Henry",
+            "card_freeze_status": false,
+            "transactions": [
+                {
+                    "type": "Credit",
+                    "title": "Hamleys",
+                    "date": "20 May 2020",
+                    "rate": "150",
+                    "category": "Shopping"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Airways",
+                    "date": "11 May 2020",
+                    "rate": "100",
+                    "category": "Travel"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Netflix",
+                    "date": "10 May 2020",
+                    "rate": "99",
+                    "category": "Entertainment"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Amazon",
+                    "date": "5 May 2020",
+                    "rate": "100",
+                    "category": "Shopping"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "card_number": "5678 5678 5678 2021",
+            "card_cvv": "654",
+            "card_expiry": "11/23",
+            "card_name": "John Doe",
+            "card_freeze_status": false,
+            "transactions": [
+                {
+                    "type": "Debit",
+                    "title": "Amazon",
+                    "date": "30 April 2020",
+                    "rate": "110",
+                    "category": "Shopping"
+                },
+                {
+                    "type": "Credit",
+                    "title": "Prime",
+                    "date": "20 April 2020",
+                    "rate": "99",
+                    "category": "Entertainment"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Amazon",
+                    "date": "10 April 2020",
+                    "rate": "200",
+                    "category": "Shopping"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "card_number": "0909 0909 0909 2022",
+            "card_cvv": "987",
+            "card_expiry": "12/24",
+            "card_name": "Jack Doe",
+            "card_freeze_status": true,
+            "transactions": [
+                {
+                    "type": "Debit",
+                    "title": "Walmart",
+                    "date": "20 May 2020",
+                    "rate": "150",
+                    "category": "Shopping"
+                },
+                {
+                    "type": "Credit",
+                    "title": "Airways",
+                    "date": "20 May 2020",
+                    "rate": "150",
+                    "category": "Travel"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Hamleys",
+                    "date": "20 May 2021",
+                    "rate": "150",
+                    "category": "Entertainment"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Hamleys",
+                    "date": "20 May 2020",
+                    "rate": "150",
+                    "category": "Shopping"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "card_number": "5678 5678 5678 2021",
+            "card_cvv": "654",
+            "card_expiry": "11/23",
+            "card_name": "John Doe",
+            "card_freeze_status": false,
+            "transactions": [
+                {
+                    "type": "Debit",
+                    "title": "Amazon",
+                    "date": "30 April 2020",
+                    "rate": "110",
+                    "category": "Shopping"
+                },
+                {
+                    "type": "Credit",
+                    "title": "Prime",
+                    "date": "20 April 2020",
+                    "rate": "99",
+                    "category": "Entertainment"
+                },
+                {
+                    "type": "Debit",
+                    "title": "Amazon",
+                    "date": "10 April 2020",
+                    "rate": "200",
+                    "category": "Shopping"
+                }
+            ]
+        }
+    ]
+}
